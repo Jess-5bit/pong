@@ -31,6 +31,10 @@
 <script>
 const canvas = document.getElementById('game');
 const context = canvas.getContext('2d');
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const grid = 15;
