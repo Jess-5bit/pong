@@ -37,8 +37,8 @@ window.addEventListener('resize', () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
-let grid = canvas.height / 40;
-let paddleHeight = grid * 5;
+const grid = 15;
+const paddleHeight = grid * 5; // 80
 const maxPaddleY = canvas.height - grid - paddleHeight;
 
 var paddleSpeed = 5;
